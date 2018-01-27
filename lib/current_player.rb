@@ -8,14 +8,15 @@ def turn_count(board)
   return turns
 end
 
+
 # Using %
-def current_player(board)
-  if turn_count(board) % 2 == 0
-    return "X"
-  elsif turn_count(board) % 2 != 0
-    return "O"
-  end
-end
+# def current_player(board)
+#   if turn_count(board) % 2 == 0
+#     return "X"
+#   elsif turn_count(board) % 2 != 0
+#     return "O"
+#   end
+# end
 
 # Using .even? and .odd?
 # def current_player(board)
@@ -25,3 +26,19 @@ end
 #     return "O"
 #   end
 # end
+
+#Using ternary operator
+def current_player(board)
+  if turn_count(board) % 2 == 0
+    return "X"
+  elsif turn_count(board) % 2 != 0
+    return "O"
+  end
+end
+# input_type = gets =~ /hello/i ? "greeting" : "other"
+# input_type =
+#   if gets =~ /hello/i
+#     "greeting"
+#   else
+#     "other"
+#   end
