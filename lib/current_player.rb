@@ -30,9 +30,6 @@ end
 #Using ternary operator
 def current_player(board)
   turn_count(board) % 2 == 0 ? "X" : "O"
-    return "X"
-  elsif turn_count(board) % 2 != 0
-    return "O"
   end
 end
 # input_type = gets =~ /hello/i ? "greeting" : "other"
