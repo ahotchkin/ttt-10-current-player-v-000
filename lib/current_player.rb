@@ -10,13 +10,13 @@ end
 
 
 # Using %
-# def current_player(board)
-#   if turn_count(board) % 2 == 0
-#     return "X"
-#   elsif turn_count(board) % 2 != 0
-#     return "O"
-#   end
-# end
+def current_player(board)
+  if turn_count(board) % 2 == 0
+    return "X"
+  elsif turn_count(board) % 2 != 0
+    return "O"
+  end
+end
 
 # Using .even? and .odd?
 # def current_player(board)
@@ -32,6 +32,6 @@ end
 #   turn_count(board) % 2 == 0 ? "X" : "O"
 # end
 
-def current_player(board)
-  turn_count(board).even? ? "X" : "O"
-end
+# def current_player(board)
+#   turn_count(board).even? ? "X" : "O"
+# end
